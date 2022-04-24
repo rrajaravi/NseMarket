@@ -1,0 +1,83 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/text_view_change_percentage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Stock Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/text_view_change_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/text_view_change_percentage_label"
+        android:text="40.12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/text_view_change_percentage_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:labelFor="@+id/text_view_change_percentage"
+        android:text="%"
+        android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <RelativeLayout
+        android:layout_below="@id/text_view_change_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignBaseline="@id/text_view_ltp"
+            android:id="@+id/text_view_ltp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/text_view_ltp"
+            android:textSize="12dp"
+            android:text="LTP: "/>
+
+        <TextView
+            android:layout_toRightOf="@id/text_view_ltp_label"
+            android:id="@+id/text_view_ltp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:text="76.30" />
+
+        <TextView
+            android:layout_alignBaseline="@+id/text_view_change"
+            android:layout_toLeftOf="@id/text_view_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/text_view_change"
+            android:textSize="12dp"
+            android:text="Change: " />
+
+        <TextView
+            android:paddingEnd="5dp"
+            android:gravity="right"
+            android:id="@+id/text_view_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:ems="4"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd="true"
+            android:text="13" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

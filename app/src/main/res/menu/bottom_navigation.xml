@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_nifty50"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="NIFTY50" />
+
+    <item
+        android:id="@+id/nav_banknifty"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_bank_24"
+        android:title="NIFTY BANK" />
+
+    <item
+        android:id="@+id/nav_nifty_it"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_computer_24"
+        android:title="NIFTY IT" />
+
+</menu>
